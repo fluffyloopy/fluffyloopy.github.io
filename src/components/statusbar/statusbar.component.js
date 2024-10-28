@@ -176,6 +176,8 @@ class Statusbar extends Component {
           color: #9898a5;
           cursor: pointer;
           border-radius: 5px 15px 15px 5px;
+          background-image: url("src/img/favicon.jpg");
+          background-size: cover;
       }
 
       .add-tab:hover {
@@ -194,7 +196,6 @@ class Statusbar extends Component {
         <div id="tabs">
             <cols>
                 <button class="+ add-tab">
-                  <span class="material-icons add-tab-icon">add</span>
                 </button>
                 <ul class="- indicator"></ul>
                 <div class="+ widgets col-end">

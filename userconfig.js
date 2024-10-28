@@ -28,7 +28,7 @@ const CONFIG = new Config({
     "t": 'todo-list',
     "s": 'search-bar'
   },
-  disabled: [],
+  disabled: ['todo-list'],
   openLastVisitedTab: false,
   tabs: [
     {
@@ -281,11 +281,11 @@ const CONFIG = new Config({
       ],
     },
     {
-      name: "bookmarks",
+      name: "extras",
       background_url: "src/img/banners/cbg-11.gif",
       categories: [
         {
-          name: "4chan",
+          name: "chan",
           links: [
             {
               name: "/kawaii/",
