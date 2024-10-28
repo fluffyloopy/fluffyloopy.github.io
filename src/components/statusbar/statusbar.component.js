@@ -188,6 +188,22 @@ class Statusbar extends Component {
           font-size: 12pt;
           font-weight: bold;
       }
+
+      @media (orientation: portrait) {
+        .widget {
+          display: none;
+        }
+        .widget.weather {
+          display: inherit;
+        }
+        #tabs > cols {
+            position: unset;
+            grid-template-columns: [add-tab] 0px [tabs] auto [widgets] auto;
+        }
+        #tabs ul li:not(:last-child) {
+            line-height: 1;
+        }
+      }
     `;
   }
 
