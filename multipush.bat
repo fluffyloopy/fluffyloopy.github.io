@@ -1,7 +1,7 @@
 @echo off
 setlocal
 
-set repos=("https://github.com/fluffyloopy/mvlice-dawn" "http://tea.azunyasa.com/azu/mvlice-dawn")
+set repos=("https://github.com/fluffyloopy/fluffyloopy.github.io" "http://tea.azunyasa.com/azu/mvlice-dawn")
 
 for %%a in %repos% do (
   echo Pushing to %%a...
