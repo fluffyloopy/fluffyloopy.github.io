@@ -33,10 +33,10 @@ const CONFIG = new Config({
   tabs: [
     {
       name: "myself",
-      background_url: "src/img/banners/cbg-9.gif",
+      background_url: "src/img/banners/cbg-4-temp.gif",
       categories: [
         {
-          name: "bookmarks",
+          name: "daily",
           links: [
             {
               name: "copilot",
@@ -280,6 +280,29 @@ const CONFIG = new Config({
         },
       ],
     },
+    {
+      name: "bookmarks",
+      background_url: "src/img/banners/cbg-11.gif",
+      categories: [
+        {
+          name: "4chan",
+          links: [
+            {
+              name: "/kawaii/",
+              url: "https://sushigirl.us/kawaii/",
+              icon: "fish",
+              icon_color: palette.green,
+            },
+            {
+              name: "/lounge/",
+              url: "https://sushigirl.us/lounge/",
+              icon: "fish",
+              icon_color: palette.peach,
+            },
+          ],
+        },
+      ],
+    }
   ],
 
 });
