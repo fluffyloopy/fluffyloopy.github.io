@@ -114,21 +114,10 @@ class Tabs extends Component {
           height: 100%;
           position: relative;
           border-radius: 5px 0 0 5px;
-          overflow: scroll;
+          overflow: auto;
 
           scrollbar-width: thin;
           scrollbar-color: #8a8b93 #18181d;
-
-          &::-webkit-scrollbar {
-            width: 8px;
-          }
-          &::-webkit-scrollbar-track {
-            background: #18181d; 
-          }
-          &::-webkit-scrollbar-thumb {
-            background-color: #8a8b93;
-            border-radius: 10px;
-          }
         }
 
       .categories ul {
