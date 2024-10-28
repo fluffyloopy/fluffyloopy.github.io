@@ -9,14 +9,18 @@
   <a href="https://b-coimbra.github.io/dawn/">LIVE PREVIEW</a>
 </div>
 
+## Note
+
+This was forked from [b-coimbra/dawn](https://github.com/b-coimbra/dawn) with some modifications from cappucino [cappucino](https://github.com/pivoshenko/catppuccin-startpage) to suit my needs. Still very WIP for all of my changes.
+
 ## Keybindings
 
-- <kbd>Numrow</kbd> Switch tabs
-- <kbd>t</kbd> Open the create task panel
-  - <kbd>Enter</kbd> Create a task
-  - <kbd>Tab</kbd> Go to next field
-- <kbd>s</kbd> Open the search dialog
-- <kbd>Esc</kbd> Close the edit/create task panel (when field is focused)
+- `<kbd>`Numrow `</kbd>` Switch tabs
+- `<kbd>`t `</kbd>` Open the create task panel
+  - `<kbd>`Enter `</kbd>` Create a task
+  - `<kbd>`Tab `</kbd>` Go to next field
+- `<kbd>`s `</kbd>` Open the search dialog
+- `<kbd>`Esc `</kbd>` Close the edit/create task panel (when field is focused)
 
 ## Configuration
 
@@ -118,45 +122,45 @@ Alternatively, click on the crypto widget to change the settings:
 
 ## Features/TODO
 
-  - [X] Status bar
-    - [X] Clock/Date
-    - [X] Live crypto
-    - [X] Current weather
-      - [X] `REFACTOR` Show weather location on hover
-    - [ ] `MAYBE` RSS reader
-  - [X] Quick search panel
-  - [ ] Todo/schedule panel
-    - [X] Reordering
-    - [X] Task priority
-    - [ ] Task reminder
-      - [ ] `MAYBE` Sync todo with google calendar
-    - [X] Link to external URL
-    - [X] Filter by task status (TODO/DONE)
-    - [ ] Sort by creation date
-    - [ ] Sort by task priority
-    - [X] Clean all tasks button
-    - [X] Edit task button
-    - [ ] `MAYBE` Subtasks w/ progress bar
-    - [ ] `MAYBE` Subsections for todo DEADLINE ("today", "upcoming")
-  - [ ] Tabs/Links section
-    - [ ] Show link domain on hover
-    - [ ] Category styles (compact, icon, full)
-    - [ ] Add "create new tab" button
-    - [X] Add link icon
-    - [ ] Drag/drop reorganize
-  - [ ] Crypto section
-    - [ ] Load top 10 coins and currencies via API
-  - [ ] Configuration
-    - [X] Disable components
-    - [ ] Toggle status bar sections
-    - [X] Open last visited panel on new tab
-    - [ ] Reset settings to default
-    - [X] Change keybindings
-    - [ ] Import/export settings
-    - [ ] Randomize banner gifs
-    - [ ] Status bar tab indicator (roman numerals, hiragana, numbers)
-    - [ ] Colorscheme manipulation
-    - [ ] `MAYBE` Optional sound fx
-  - [ ] Create favicon
-  - [ ] Keybinding cheatsheet
-  - [ ] Verify updates on startup
+- [X] Status bar
+  - [X] Clock/Date
+  - [X] Live crypto
+  - [X] Current weather
+    - [X] `REFACTOR` Show weather location on hover
+  - [ ] `MAYBE` RSS reader
+- [X] Quick search panel
+- [ ] Todo/schedule panel
+  - [X] Reordering
+  - [X] Task priority
+  - [ ] Task reminder
+    - [ ] `MAYBE` Sync todo with google calendar
+  - [X] Link to external URL
+  - [X] Filter by task status (TODO/DONE)
+  - [ ] Sort by creation date
+  - [ ] Sort by task priority
+  - [X] Clean all tasks button
+  - [X] Edit task button
+  - [ ] `MAYBE` Subtasks w/ progress bar
+  - [ ] `MAYBE` Subsections for todo DEADLINE ("today", "upcoming")
+- [ ] Tabs/Links section
+  - [ ] Show link domain on hover
+  - [ ] Category styles (compact, icon, full)
+  - [ ] Add "create new tab" button
+  - [X] Add link icon
+  - [ ] Drag/drop reorganize
+- [ ] Crypto section
+  - [ ] Load top 10 coins and currencies via API
+- [ ] Configuration
+  - [X] Disable components
+  - [ ] Toggle status bar sections
+  - [X] Open last visited panel on new tab
+  - [ ] Reset settings to default
+  - [X] Change keybindings
+  - [ ] Import/export settings
+  - [ ] Randomize banner gifs
+  - [ ] Status bar tab indicator (roman numerals, hiragana, numbers)
+  - [ ] Colorscheme manipulation
+  - [ ] `MAYBE` Optional sound fx
+- [ ] Create favicon
+- [ ] Keybinding cheatsheet
+- [ ] Verify updates on startup

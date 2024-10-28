@@ -1,17 +1,19 @@
+const palette = latte;
+
 const CONFIG = new Config({
   crypto: {
     coin: 'ETH',
     currency: 'USD',
     refreshIn: 10
   },
-  overrideStorage: true, // override localStorage with fixed userconfig values
+  overrideStorage: true,
   temperature: {
-    location: 'Matão, São Paulo',
+    location: 'Maldives',
     scale: 'C'
   },
   clock: {
     format: 'h:i p',
-    iconColor: '#ff7b95'
+    iconColor: palette.maroon,
   },
   search: {
     engines: {
@@ -30,180 +32,254 @@ const CONFIG = new Config({
   openLastVisitedTab: false,
   tabs: [
     {
-      name: 'boards',
-      background_url: 'src/img/banners/bg-1.gif',
-      categories: [{
-        name: 'fun',
-        links: [
-          {
-            url: 'https://4chan.org/wsg/',
-            name: '/wsg/'
-          },
-          {
-            name: '/out/',
-            url: 'https://4chan.org/out',
-            icon: 'leaf',
-            icon_color: '#64876d'
-          },
-          {
-            name: '/lit/',
-            url: 'https://4chan.org/lit/',
-            icon: 'book'
-          },
-          {
-            name: '/v/',
-            url: 'https://4chan.org/v/',
-            icon: 'device-gamepad',
-            icon_color: '#8b647b'
-          },
-          {
-            name: '/p/',
-            url: 'https://4chan.org/p/',
-            icon: 'camera'
-          }
-        ]
-      },
-      {
-        name: 'Comfy',
-        links: [
-          {
-            name: '/lounge/',
-            url: 'https://sushigirl.us/lounge/catalog.html'
-          },
-          {
-            name: '/comfy/',
-            url: 'https://anon.cafe/comfy/catalog.html'
-          }
-        ]
-      },
-      {
-        name: 'Technology',
-        links: [
-          {
-            name: '/g/',
-            url: 'https://4chan.org/g/',
-          },
-          {
-            name: '/Δ/',
-            url: 'https://archive.arisuchan.jp/%CE%94/catalog.html'
-          },
-          {
-            name: '/λ/',
-            url: 'https://www.lainchan.org/%CE%BB/catalog.html'
-          },
-          {
-            name: '/sec/',
-            url: 'https://www.lainchan.org/sec/catalog.html'
-          },
-          {
-            name: '/prog/',
-            url: 'https://boards.420chan.org/prog/',
-            icon: 'code'
-          }
-        ]
-      }
-      ]
-    },
-    {
-      name: 'music',
-      background_url: 'src/img/banners/bg-2.gif',
+      name: "myself",
+      background_url: "src/img/banners/cbg-9.gif",
       categories: [
+        {
+          name: "bookmarks",
+          links: [
+            {
+              name: "copilot",
+              url: "https://aistudio.google.com/app/prompts/new_chat",
+              icon: "brand-github-copilot",
+              icon_color: palette.green,
+            },
+            {
+              name: "a soft murmur",
+              url: "https://asoftmurmur.com/",
+              icon: "tornado",
+              icon_color: palette.peach,
+            },
+          ],
+        },
+        {
+          name: "workspace",
+          links: [
+            {
+              name: "gmail",
+              url: "https://mail.google.com",
+              icon: "brand-gmail",
+              icon_color: palette.green,
+            },
+            {
+              name: "calendar",
+              url: "https://calendar.google.com",
+              icon: "calendar-filled",
+              icon_color: palette.peach,
+            },
+            {
+              name: "sheets",
+              url: "https://docs.google.com/spreadsheets",
+              icon: "table",
+              icon_color: palette.red,
+            },
+            {
+              name: "drive",
+              url: "https://drive.google.com/drive/home",
+              icon: "brand-google-drive",
+              icon_color: palette.blue,
+            },
+          ],
+        },
         {
           name: 'music services',
           links: [
             {
+              name: 'soundcloud',
               url: 'https://soundcloud.com/',
               icon: 'brand-soundcloud',
-              icon_color: '#c57750'
+              icon_color: palette.green
             },
             {
+              name: 'youtube',
               url: 'https://youtu.be/',
               icon: 'brand-youtube',
-              icon_color: '#996767'
+              icon_color: palette.peach
             },
             {
+              name: 'r-a-d.io',
               url: 'https://r-a-d.io/',
-              icon: 'radio'
+              icon: 'radio',
+              icon_color: palette.red
             },
           ]
         },
-        {
-          name: 'music boards',
-          links: [
-            {
-              name: '/music/',
-              url: 'https://lainchan.org/music/',
-              icon: 'disc'
-            },
-            {
-              name: '/mu/',
-              url: 'https://boards.4channel.org/mu/',
-            }
-          ]
-        }
-      ]
+      ],
     },
     {
-      name: 'tech',
-      background_url: 'src/img/banners/bg-3.gif',
+      name: "dev",
+      background_url: "src/img/banners/cbg-8.gif",
       categories: [
         {
-          name: 'subreddits',
+          name: "resources",
           links: [
             {
-              name: 'r/startpages/',
-              url: 'https://www.reddit.com/r/startpages/'
+              name: "github",
+              url: "https://github.com",
+              icon: "brand-github",
+              icon_color: palette.green,
             },
             {
-              name: 'r/unixporn',
-              url: 'https://www.reddit.com/r/unixporn/'
+              name: "gitlab",
+              url: "https://gitlab.uwe.ac.uk/",
+              icon: "brand-gitlab",
+              icon_color: palette.peach,
             },
             {
-              name: 'r/mechkbds/',
-              url: 'https://www.reddit.com/r/MechanicalKeyboards/',
-              icon: 'keyboard',
-              icon_color: '#a57685'
+              name: "gitea",
+              url: "http://tea.azunyasa.com",
+              icon: "brand-git",
+              icon_color: palette.red,
             },
-            {
-              name: 'r/programming',
-              url: 'https://www.reddit.com/r/programming/'
-            }
-          ]
+          ],
         },
         {
-          name: 'blogs',
+          name: "challenges",
           links: [
             {
-              name: 'fasterthanli',
-              url: 'https://fasterthanli.me/articles',
-              icon: 'anchor'
+              name: "adventofcode",
+              url: "https://adventofcode.com/",
+              icon: "asterisk-simple",
+              icon_color: palette.green,
             },
             {
-              name: 'dev.to',
-              url: 'https://dev.to'
+              name: "leetcode",
+              url: "https://leetcode.com",
+              icon: "code-plus",
+              icon_color: palette.peach,
             },
             {
-              name: 'mataroa.blog',
-              url: 'https://collection.mataroa.blog',
-            }
-          ]
+              name: "exercism",
+              url: "https://exercism.org",
+              icon: "code-minus",
+              icon_color: palette.red,
+            },
+            {
+              name: "kaggle",
+              url: "https://www.kaggle.com",
+              icon: "brain",
+              icon_color: palette.blue,
+            },
+          ],
         },
         {
-          name: 'misc',
+          name: "blogs",
           links: [
             {
-              name: 'post office',
-              url: 'http://afternoon.dynu.com/letterbox.html',
-              icon: 'mailbox'
+              name: "dou",
+              url: "https://dou.ua",
+              icon: "brand-prisma",
+              icon_color: palette.green,
             },
             {
-              name: 'rust docs',
-              url: 'https://doc.rust-lang.org/book/',
-              icon: 'notebook',
-              icon_color: '#977a3a'
-            }
-          ]
-        }
-      ]
-    }]
+              name: "hackernews",
+              url: "https://news.ycombinator.com",
+              icon: "brand-redhat",
+              icon_color: palette.peach,
+            },
+            {
+              name: "uber research",
+              url: "https://eng.uber.com/category/articles",
+              icon: "brand-uber",
+              icon_color: palette.red,
+            },
+            {
+              name: "google research",
+              url: "https://blog.research.google",
+              icon: "hexagon-letter-g",
+              icon_color: palette.blue,
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "chi ll",
+      background_url: "src/img/banners/cbg-10.gif",
+      categories: [
+        {
+          name: "social medias",
+          links: [
+            {
+              name: "telegram",
+              url: "https://web.telegram.org",
+              icon: "brand-telegram",
+              icon_color: palette.green,
+            },
+            {
+              name: "facebook",
+              url: "https://www.facebook.com",
+              icon: "brand-facebook",
+              icon_color: palette.peach,
+            },
+            {
+              name: "reddit",
+              url: "https://www.reddit.com/r/unixporn",
+              icon: "brand-reddit",
+              icon_color: palette.red,
+            },
+          ],
+        },
+        {
+          name: "games",
+          links: [
+            {
+              name: "IGN",
+              url: "https://www.ign.com/account/playlist/library",
+              icon: "device-gamepad",
+              icon_color: palette.green,
+            },
+            {
+              name: "steam",
+              url: "https://store.steampowered.com",
+              icon: "brand-steam",
+              icon_color: palette.peach,
+            },
+            {
+              name: "epicgames",
+              url: "https://store.epicgames.com",
+              icon: "brand-fortnite",
+              icon_color: palette.red,
+            },
+            {
+              name: "nintendo",
+              url: "https://store.nintendo.co.uk",
+              icon: "device-nintendo",
+              icon_color: palette.blue,
+            },
+          ],
+        },
+        {
+          name: "video",
+          links: [
+            {
+              name: "anilist",
+              url: "https://anilist.co/home",
+              icon: "brand-funimation",
+              icon_color: palette.green,
+            },
+            {
+              name: "youtube",
+              url: "https://www.youtube.com",
+              icon: "brand-youtube",
+              icon_color: palette.peach,
+            },
+            {
+              name: "patreon",
+              url: "https://www.patreon.com",
+              icon: "brand-patreon",
+              icon_color: palette.red,
+            },
+            {
+              name: "kyivstar",
+              url: "https://tv.kyivstar.ua",
+              icon: "star-filled",
+              icon_color: palette.blue,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+
 });

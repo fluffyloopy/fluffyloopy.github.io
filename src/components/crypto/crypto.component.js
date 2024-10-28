@@ -9,6 +9,7 @@ class Crypto extends Component {
   };
 
   currencies = {
+    'MVR': 'MVR',
     'USD': '$',
     'JPY': '¥',
     'GBP': '£',

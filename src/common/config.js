@@ -31,8 +31,9 @@ class Config {
 
   config;
 
-  constructor (config) {
+  constructor (config, palette = latte) {
     this.config = config;
+    this.palette = palette;
     this.storage = new Storage('config');
 
     this.autoConfig();
